@@ -6,6 +6,8 @@
 #
 asgiref==3.5.2
     # via django
+certifi==2022.5.18.1
+    # via sentry-sdk
 cfgv==3.3.1
     # via pre-commit
 distlib==0.3.4
@@ -24,11 +26,15 @@ pre-commit==2.19.0
     # via -r requirements_dev.in
 pyyaml==6.0
     # via pre-commit
+sentry-sdk==1.5.12
+    # via -r requirements.in
 six==1.16.0
     # via virtualenv
 sqlparse==0.4.2
     # via django
 toml==0.10.2
     # via pre-commit
+urllib3==1.26.9
+    # via sentry-sdk
 virtualenv==20.14.1
     # via pre-commit
