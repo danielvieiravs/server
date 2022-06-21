@@ -10,9 +10,14 @@ certifi==2022.5.18.1
     # via sentry-sdk
 django==4.0.5
     # via -r requirements.in
+gunicorn==20.1.0
+    # via -r requirements.in
 sentry-sdk==1.5.12
     # via -r requirements.in
 sqlparse==0.4.2
     # via django
 urllib3==1.26.9
     # via sentry-sdk
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools

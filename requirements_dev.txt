@@ -16,6 +16,8 @@ django==4.0.5
     # via -r requirements.in
 filelock==3.7.1
     # via virtualenv
+gunicorn==20.1.0
+    # via -r requirements.in
 identify==2.5.1
     # via pre-commit
 nodeenv==1.6.0
@@ -38,3 +40,6 @@ urllib3==1.26.9
     # via sentry-sdk
 virtualenv==20.14.1
     # via pre-commit
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools
