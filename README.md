@@ -98,6 +98,16 @@ $ pre-commit install
 $ docker-compose up -d --build
 ```
 
+## Down
+```shell
+$ docker-compose -f docker-compose.prod.yml down -v
+```
+
+## Container logs
+```shell
+$ docker-compose -f docker-compose.prod.yml logs -f
+```
+
 ## Remove all data from the database
 ```shell
 $ docker-compose exec web python manage.py flush --no-input
