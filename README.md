@@ -82,11 +82,33 @@ pip-sync requirements_dev.txt
 # Pre-commit
 
 If not already installed, please install pre-commit hooks
-```
+```shell
 pip install pre-commit
 ```
 
 After every ".pre-commit-config.yaml" file change, or for the first time, do:
-```
+```shell
 $ pre-commit install
+```
+
+# Docker
+
+## Build && Run
+```shell
+$ docker-compose up -d --build
+```
+
+## Remove all data from the database
+```shell
+$ docker-compose exec web python manage.py flush --no-input
+```
+
+## Run the migrations
+```shell
+$ docker-compose exec web python manage.py migrate --noinput
+```
+
+## Access postgres container
+```shell
+$ docker-compose exec db psql --username= --dbname=
 ```

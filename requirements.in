@@ -1,3 +1,4 @@
 django
 sentry_sdk
 gunicorn
+psycopg2-binary
